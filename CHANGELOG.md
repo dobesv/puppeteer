@@ -2,6 +2,23 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [16.0.0](https://github.com/puppeteer/puppeteer/compare/v15.5.0...v16.0.0) (2022-07-25)
+
+
+### ⚠ BREAKING CHANGES
+
+* With Chromium, Puppeteer will now attach to page/iframe targets immediately. Browser.connect requires an explicit product name when connecting to Firefox since Firefox does not support CDP's auto-attach.
+
+### Features
+
+* add Dockerfile ([#8315](https://github.com/puppeteer/puppeteer/issues/8315)) ([b72d949](https://github.com/puppeteer/puppeteer/commit/b72d9498fb2424ee09a8eeb0c9531153fdaa031e))
+* use CDP's auto-attach mechanism ([#8520](https://github.com/puppeteer/puppeteer/issues/8520)) ([e1e751d](https://github.com/puppeteer/puppeteer/commit/e1e751dd1a47b05dd2db36a65e91a2f53d9c88ae))
+
+
+### Bug Fixes
+
+* address flakiness in frame handling ([#8688](https://github.com/puppeteer/puppeteer/issues/8688)) ([02c07cc](https://github.com/puppeteer/puppeteer/commit/02c07cc0ff73e0c0f502baf079771b3a891b4fb8))
+
 ## [15.5.0](https://github.com/puppeteer/puppeteer/compare/v15.4.2...v15.5.0) (2022-07-21)
 
 
